@@ -23,18 +23,19 @@ public partial class _Default : System.Web.UI.Page
         else
         {
             UserName = root.context.user.fullName;
+            if (root.context.environment.parameters.ContainsKey("acctId"))
+            {
+                accountId = root.context.environment.parameters["acctId"];
+            }
+            if (root.context.environment.parameters.ContainsKey("acctName"))
+            {
+                accountName = root.context.environment.parameters["acctName"];
+            }
         }
-        
-        if (root.context.environment.parameters.ContainsKey("acctId"))
-        {
-            accountId = root.context.environment.parameters["acctId"];
-        }
-        if (root.context.environment.parameters.ContainsKey("acctName"))
-        {
-            accountName = root.context.environment.parameters["acctName"];
-        }
-        
-        
+
+
+
+
     }
     private string CheckSignedRequest(string encodedSignedRequest)
     {
