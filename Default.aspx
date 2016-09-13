@@ -117,7 +117,10 @@
         <%=signedRequest %>
         </div>
 
-
+        Log:
+        <div>
+            <%=String.Join("<br />",log) %>
+        </div>
     </form>
 </body>
 </html>
