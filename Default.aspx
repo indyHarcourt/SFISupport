@@ -113,7 +113,7 @@
         </div>
         <br />
         signedRequest:
-        <div style="width:100%; border: solid 1px gray; padding:5px;">
+        <div style="width:1000px; border: solid 1px gray; padding:5px; ">
         <%=signedRequest %>
         </div>
 
