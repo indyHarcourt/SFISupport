@@ -110,9 +110,9 @@
             <%=SignedRequestStatus%>
         </div>
         <br />
-        FullRequest:
+        signedRequest:
         <div style="width:100%; border: solid 1px gray; padding:5px;">
-        <%=fullRequest %>
+        <%=signedRequest %>
         </div>
 
 

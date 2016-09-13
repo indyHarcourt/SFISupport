@@ -13,12 +13,13 @@ public partial class _Default : System.Web.UI.Page
     public string accountId = string.Empty;
     public string accountName = String.Empty;
     public string fullRequest = string.Empty;
+    public string signedRequest = string.Empty;
     private RootObject root;
     protected void Page_Load(object sender, EventArgs e)
     {
         fullRequest = string.Join(",<br />", Request.Params.AllKeys);
 
-        string signedRequest = Request.Params["signed_request"];
+        signedRequest = Request.Params["signed_request"];
         SignedRequestStatus = CheckSignedRequest(Request.Form["signed_request"]);
         if (root == null)
         {
