@@ -72,6 +72,10 @@
                 </tr>
             </table>
         </div>
+        FullRequest:
+        <div style="width:100%; border: solid 1px gray; padding:5px;">
+        <%=fullRequest %>
+        </div>
         <div>
             <h3>ISupport Tickets</h3>
             <table id="supportTable" style="width:1000px;">

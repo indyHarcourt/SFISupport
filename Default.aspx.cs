@@ -10,7 +10,7 @@ public partial class _Default : System.Web.UI.Page
     public string UserName = string.Empty;
     public string accountId = string.Empty;
     public string accountName = String.Empty;
-
+    public string fullRequest = string.Empty;
     private RootObject root;
     protected void Page_Load(object sender, EventArgs e)
     {
