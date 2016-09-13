@@ -72,10 +72,7 @@
                 </tr>
             </table>
         </div>
-        FullRequest:
-        <div style="width:100%; border: solid 1px gray; padding:5px;">
-        <%=fullRequest %>
-        </div>
+        <br />
         <div>
             <h3>ISupport Tickets</h3>
             <table id="supportTable" style="width:1000px;">
@@ -108,11 +105,16 @@
             </table>
 
         </div>
-        <asp:HyperLink Text="other page" ID="link2" runat="server"  Target="_self"
- NavigateUrl="~/GridSample.aspx" />
+        <asp:HyperLink Text="other page" ID="link2" runat="server"  Target="_self" NavigateUrl="~/GridSample.aspx" />
         <div class="request">
             <%=SignedRequestStatus%>
         </div>
+        <br />
+        FullRequest:
+        <div style="width:100%; border: solid 1px gray; padding:5px;">
+        <%=fullRequest %>
+        </div>
+
 
     </form>
 </body>
