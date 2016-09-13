@@ -16,7 +16,7 @@ public partial class _Default : System.Web.UI.Page
     private RootObject root;
     protected void Page_Load(object sender, EventArgs e)
     {
-        fullRequest = string.Join(",", Request.Params.AllKeys);
+        fullRequest = string.Join(",<br />", Request.Params.AllKeys);
 
         string signedRequest = Request.Params["signed_request"];
         SignedRequestStatus = CheckSignedRequest(Request.Form["signed_request"]);
