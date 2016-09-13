@@ -2,7 +2,9 @@
 using System.Configuration;
 using System.Web;
 using SalesForceOAuth;
+using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using System.Text;
 
 public partial class _Default : System.Web.UI.Page
 {
@@ -14,7 +16,7 @@ public partial class _Default : System.Web.UI.Page
     private RootObject root;
     protected void Page_Load(object sender, EventArgs e)
     {
-        fullRequest = Request.InputStream.ToString();
+        fullRequest = string.Join(",", Request.Params.AllKeys);
 
         string signedRequest = Request.Params["signed_request"];
         SignedRequestStatus = CheckSignedRequest(Request.Form["signed_request"]);
