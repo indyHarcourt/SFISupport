@@ -106,6 +106,8 @@
 
         </div>
         <asp:HyperLink Text="other page" ID="link2" runat="server"  Target="_self" NavigateUrl="~/GridSample.aspx" />
+        <br />
+        SignedRequestStatus:
         <div class="request">
             <%=SignedRequestStatus%>
         </div>
